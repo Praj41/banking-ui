@@ -2,26 +2,174 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* poppins css  start*/
+html {
+  font-size: 10px !important;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  background-color: #ffffff;
+  background: url('../../public/images/bg.png') no-repeat;
+  background-size: cover;
+}
+.section-spacing {
+  @apply sm:py-10 lg:py-16;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@font-face {
+  font-family: "Poppins";
+  src: url("../../public/font/Poppins-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../public/font/Poppins-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../public/font/Poppins-SemiBold.ttf");
+  font-weight: "semibold";
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../public/font/Poppins-Medium.ttf");
+  font-weight: medium;
+}
+
+.font-pop {
+  font-family: "Poppins";
+}
+
+.placeholder\:font-pop {
+  font-family: "Poppins";
+}
+
+/* poppins css  end*/
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 12px !important;
+  }
+
+  body {
+    font-size: 1.167rem;
+  }
+}
+
+/*Phone Number css start*/
+.react-international-phone-country-selector {
+  @apply h-11 bg-white;
+  padding: 3px 6px !important;
+}
+.react-international-phone-country-selector button {
+  @apply h-full;
+}
+.svg-left-margin {
+  margin-left: 14px;
+}
+.input-icon svg{
+  @apply w-10 lg:w-8;
+}
+
+/*Phone Number css end*/
+
+
+@media screen and (min-width: 1024px) {
+  .loader {
+    width: 150px;
+    height: 150px;
+  }
+  .container {
+    max-width: 950px !important;
+  }
+  html {
+    font-size: 14px !important;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1334px) {
+  html {
+    font-size: 16px !important;
+  }
+
+  .container {
+    max-width: 1154px !important;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1158px !important;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 18px !important;
+  }
+
+  body {
+    font-size: 0.889rem !important;
+  }
+
+  .container {
+    max-width: 1480px !important;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  html {
+    font-size: 22px !important;
+  }
+
+  body {
+    font-size: 0.818rem !important;
+  }
+
+  .container {
+    max-width: 1600px !important;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  html {
+    font-size: 28px !important;
+  }
+
+  body {
+    font-size: 1rem !important;
+  }
+
+  .container {
+    max-width: 2240px !important;
+  }
+}
+
+@media screen and (min-width: 3440px) {
+  html {
+    font-size: 34px !important;
+  }
+
+  .container {
+    max-width: 3200px !important;
+  }
+}
+
+@media screen and (min-width: 3840px) {
+  html {
+    font-size: 40px !important;
+  }
+
+  .container {
+    max-width: 3600px !important;
   }
 }
